@@ -1,0 +1,134 @@
+@use '../base' as b
+@use '../utils' as u
+.header--mobile
+	display: none
+
+	@include u.s
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		width: 100%
+		height: 80px
+		padding: 0 2vw
+
+.header
+	width: 100%
+	height: 6.25vw
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 2vw
+
+	@include u.s
+		display: none
+	
+	&__logo
+		width: 20%
+		height: auto
+
+		img
+			width: 100%
+			height: auto
+		
+		&--mobile
+			display: none
+
+			@include u.s
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 70%
+				height: 80px
+				height: auto
+
+				img
+					width: 100%
+					height: auto
+	
+	&__nav
+		width: 65%
+		height: 100%
+		display: flex
+		align-items: center
+		font-size: 1.1vw
+		color: #000
+		text-transform: uppercase
+		padding: 0 3vw
+	
+	&__menu
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		list-style: none
+		margin: 0
+		padding: 0
+	
+	&__menu-item
+		display: inline-block
+	
+	&__button
+		width: 15%
+		height: 50px
+
+.menu-icon
+	cursor: pointer
+	position: fixed
+	top: 20px
+	right: 20px
+	z-index: 100
+
+	span
+		display: block
+		height: 3px
+		width: 25px
+		background: #fff
+		margin-bottom: 5px
+		transition: all 0.3s ease-in-out
+
+		&:last-child
+			margin-bottom: 0
+
+.mobile-menu
+	position: fixed
+	top: -100%
+	right: 0
+	width: 100%
+	height: 100%
+	background: #000
+	z-index: 99
+	transition: top 0.3s ease-in-out
+
+	ul
+		list-style: none
+		padding-top: 100px
+
+		li
+			padding: 20px
+			border-bottom: 1px solid #fff
+
+			&:hover, &:focus
+				background-color: #fff
+				text-decoration: none
+
+			a
+				color: #fff
+				text-decoration: none
+
+				&:hover, &:focus
+					color: #000
+					text-decoration: none
+					
+
+.icon-active span:nth-child(1)
+	transform: rotate(45deg) translate(5px, 5px)
+
+.icon-active span:nth-child(2)
+	opacity: 0
+
+.icon-active span:nth-child(3)
+	transform: rotate(-45deg) translate(7px, -6px)
+
+.menu-active
+	top: 0

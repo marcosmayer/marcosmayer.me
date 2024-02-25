@@ -1,0 +1,46 @@
+@mixin dflex($flexjc: center, $flexai: center, $flexd: row)
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-justify-content: $flexjc
+	justify-content: $flexjc
+	align-items: $flexai
+	-webkit-flex-direction: $flexd
+	-ms-flex-direction: $flexd
+	flex-direction: $flexd
+
+@mixin xxl
+	@media only screen and (min-width : 1440px)
+		@content
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@mixin xl
+	@media only screen and (max-width : 1440px)
+		@content
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@mixin xl
+	@media only screen and (max-width : 1200px)
+		@content
+
+/* Large devices (laptops/desktops, 992px and down) */
+@mixin l
+	@media only screen and (max-width : 992px)
+		@content
+
+/* Medium devices (landscape tablets, 768px and down) */
+@mixin m
+	@media only screen and (max-width : 768px)
+		@content
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@mixin s
+	@media only screen and (max-width : 600px)
+		@content
+
+/* Extra small devices (phones, 360px and down) */
+@mixin xs
+	@media only screen and (max-width : 360px)
+		@content
