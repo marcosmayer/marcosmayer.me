@@ -1,0 +1,27 @@
+@use '../base' as b
+@use '../utils' as u
+
+.hello
+	width: 100%
+	height: auto
+	@include u.dflex()
+
+	&__left
+		width: 50%
+		height: auto
+		text-align: left
+		padding-left: 10%
+		@include u.dflex(center, flex-start, column)
+
+		h1
+			font-size: 3rem
+
+	&__right
+		width: 50%
+		height: auto
+		@include u.dflex()
+
+		img
+			width: 80%
+			height: auto
+			object-fit: cover

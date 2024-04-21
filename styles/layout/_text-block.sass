@@ -1,0 +1,36 @@
+@use '../base' as b
+@use '../utils' as u
+
+.text
+	width: 100vw
+	max-width: 1200px
+	height: auto
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	padding: 60px 0
+	margin: 0 auto
+
+	&__block
+		width: 100%
+		height: auto
+		margin: 40px auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	&__line
+		width: 100%
+		margin-bottom: 20px
+		font-size: 1.5vw
+
+		&:last-child
+			margin-bottom: 0
+
+		@include u.s
+			max-width: 90%
+			font-size: 5vw
+			text-align: center

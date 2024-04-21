@@ -1,3 +1,83 @@
 @use '../base' as b
 @use '../utils' as u
 
+.footer
+	width: 100%
+	height: auto
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+	@include u.s
+		padding: 40px 5%
+		background-color: #F7D55D
+
+	&__menu
+		list-style: none
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 20px auto
+
+		@include u.s
+			flex-direction: column
+			margin: 0 auto
+			padding: 0
+			order: 3
+
+	&__menu-item
+		margin: 0 10px
+		font-size: 1vw
+
+		@include u.s
+			font-size: 5vw
+			margin-bottom: 20px
+
+			&:last-child
+				margin-bottom: 0
+
+	&__menu-link
+		color: #000
+		text-decoration: none
+		transition: color 0.3s
+		text-transform: uppercase
+		padding-bottom: 5px
+
+		&:hover
+			color: #000
+			border-bottom: 4px solid #000
+
+	&__social
+		display: flex
+		justify-content: center
+		align-items: center
+
+		@include u.s
+			order: 2
+			margin-bottom: 60px
+
+	&__social-link
+		width: 36px
+		height: 36px
+
+		&:first-child
+			margin-right: 40px
+
+	&__copyright
+		width: 100%
+		height: auto
+		padding: 10px 0
+		margin: 80px auto 0 auto
+		border-top: 1px solid #000
+		text-align: center
+
+		@include u.s
+			order: 4
+
+.branding__logo--footer
+
+	@include u.s
+		order: 1
+		margin-bottom: 20px

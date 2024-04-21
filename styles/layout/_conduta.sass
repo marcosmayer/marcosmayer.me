@@ -1,0 +1,33 @@
+@use '../base' as b
+@use '../utils' as u
+
+.conduta
+	width: 100%
+	height: auto
+	@include u.dflex(center, center, column)
+	background-color: #fbdb42
+
+	h1
+		color: #373737
+
+	&__modules
+		display: grid
+		grid-template-columns: repeat(5, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+		grid-gap: 40px
+		max-width: 1200px
+		margin: 40px auto
+
+	&__module
+		width: 100%
+		height: auto
+		@include u.dflex(flex-start, center, column)
+
+		img
+			width: 80%
+			height: auto
+
+		h3
+			text-align: center
+			margin-top: -30px
+			font-size: 1.1rem

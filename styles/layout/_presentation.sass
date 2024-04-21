@@ -1,0 +1,76 @@
+@use '../base' as b
+@use '../utils' as u
+
+.presentation
+	width: 100vw
+	height: auto
+	@include u.dflex()
+	overflow: hidden
+	background-image: url('../images/bg-simpatico.jpg')
+	background-size: cover
+	background-position: center
+
+	@include u.s
+		background-image: unset
+
+	&__content
+		width: 100%
+		height: 100%
+		@include u.dflex(center, flex-end, row)
+
+		@include u.s
+			width: 100%
+			margin: 0 auto
+			padding: 0
+			@include u.dflex(center, center, column)
+
+	&__content-left
+		width: 50%
+		height: auto
+		@include u.dflex(flex-end, flex-end, row)
+
+		@include u.s
+			width: 100%
+			@include u.dflex(center, center, column)
+			background-image: url('../images/bg-simpatico-mobile.jpg')
+			background-size: cover
+			background-position: center
+
+		img
+			width: 85%
+			height: auto
+
+	&__content-right
+		width: 50%
+		height: auto
+		@include u.dflex(flex-start, center, column)
+		padding: 80px 10vw 80px 0
+
+		@include u.s
+			width: 100%
+			padding: 40px 5%
+			width: 100%
+			@include u.dflex(center, center, column)
+
+	&__title
+		width: 100%
+		height: auto
+		color: #3BAAA0
+		font-weight: 700
+		font-size: 2.5vw
+
+		@include u.s
+			font-size: 7vw
+
+	&__text
+		width: 100%
+		height: auto
+		color: #000
+		font-weight: 450
+		font-size: 1.1vw
+		line-height: 1.5
+
+		@include u.s
+			font-family: 'Ubuntu', sans-serif
+			font-size: 5vw
+			font-weight: 300

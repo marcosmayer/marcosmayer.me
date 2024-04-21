@@ -1,0 +1,33 @@
+@use '../base' as b
+@use '../utils' as u
+
+.image-text
+	width: 100%
+	height: auto
+	@include u.dflex()
+	padding-top: 40px
+
+	&__left
+		width: 25%
+		height: auto
+
+		img
+			width: 100%
+			height: auto
+			object-fit: cover
+			margin-left: -70px
+
+	&__right
+		width: 75%
+		height: auto
+		text-align: left
+		padding-right: 15%
+		@include u.dflex(center, flex-start, column)
+
+		h1
+			font-size: 3rem
+			text-align: left
+			color: #202020
+
+		p
+			font-size: 1.5rem
