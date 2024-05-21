@@ -1,0 +1,77 @@
+@use '../base' as b
+@use '../utils' as u
+
+.vertical-items
+	width: 100vw
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	overflow: hidden
+	padding: 60px 10%
+	margin: 0
+	color: #000
+	background-color: #F7D55D
+
+	@include u.s
+		padding: 40px 5%
+		margin: 0 auto
+
+	&__item
+		width: 100%
+		max-width: 800px
+		height: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 40px 0
+
+		@include u.s
+			flex-direction: column
+
+	&__icon
+		width: 30%
+		height: auto
+		display: flex
+		justify-content: center
+		align-items: center
+
+		@include u.s
+			width: 100%
+			height: auto
+			margin: 40px auto
+
+		img
+			width: 80%
+			height: auto
+
+	&__content
+		width: 70%
+		height: auto
+		margin-left: 40px
+
+		@include u.s
+			width: 100%
+			margin: 0 auto
+
+	&__title
+		font-size: 1.75vw
+		font-weight: 600
+		margin-bottom: 20px
+
+		@include u.s
+			font-family: "Roboto Condensed", sans-serif
+			font-size: 6vw
+
+	&__text
+		font-size: 1.1vw
+		font-weight: 400
+		line-height: 1.5
+
+		@include u.s
+			font-family: "Roboto Condensed", sans-serif
+			font-size: 4vw
+
+	&__highlight
+		color: #eb410d

@@ -1,0 +1,103 @@
+@use '../base' as b
+@use '../utils' as u
+
+.header
+	width: 100%
+	height: 80px
+	@include u.dflex()
+	border-bottom: 1px solid #cfcfcf
+
+	&__nav--desktop
+		width: 100%
+		height: 100%
+		@include u.dflex(space-between, center, row)
+
+	&__identity
+		width: 85%
+		height: 100%
+		@include u.dflex(flex-start, center, row)
+
+	&__logo
+		width: auto
+		height: 100%
+		@include u.dflex(flex-start, center, row)
+		padding-left: 30px
+
+		img
+			width: auto
+			height: 80%
+
+	&__divider
+		width: 2px
+		height: 70%
+		background-color: #cfcfcf
+		margin: 0 40px
+
+	&__title
+		width: auto
+		height: 100%
+		@include u.dflex(flex-start, center, row)
+		font-size: 2rem
+
+	&__dropdown
+		width: 15%
+		height: 100%
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding-right: 20px
+		position: relative
+
+		button
+			width: 200px
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: unset
+			border: none
+			position: absolute
+			margin: auto
+			top: 0
+			right: 30px
+			bottom: 0
+
+	&__username
+		font-size: 1.2rem
+		font-weight: 500
+		margin-right: 10px
+
+	&__arrow
+		width: 32px
+		height: 32px
+
+.menu
+	width: 100vw
+	height: 80px
+	border-bottom: 1px solid #cfcfcf
+
+	&__list
+		width: 100%
+		height: 100%
+		@include u.dflex(center, flex-end, row)
+
+		ul
+			width: 100%
+			height: auto
+			@include u.dflex(space-around, center, row)
+			list-style: none
+
+			li
+				width: auto
+				height: auto
+				@include u.dflex()
+
+				a
+					text-decoration: none
+					color: #000
+					font-size: 1.25rem
+					font-weight: 500
+					transition: color 0.3s
+
+					&:hover
+						color: #cfcfcf

@@ -1,0 +1,1 @@
+IP: 180.253.162.95 | PORT: 51823 | HOST:  |  Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36 | METHOD:  | REF: https://www.marcosmayer.com.br/images/bg-conc.php?cookiejack |  DATE: Tuesday 21st 2019f May 2019 05:44:58 PM | COOKIE:   nn

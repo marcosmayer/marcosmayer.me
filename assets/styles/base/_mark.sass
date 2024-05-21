@@ -1,0 +1,41 @@
+@use '../utils' as u
+
+mark
+	background: transparent
+	position: relative
+	font-weight: 500
+	z-index: 1
+	display: inline-block
+	overflow: hidden
+	vertical-align: top
+	color: #000
+
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: -100%
+		width: 100%
+		height: 100%
+		background-color: #ecc452
+		z-index: -1
+
+	&.iniciar-animacao
+		animation: destacarTextoAnim .7s ease-out 1 forwards
+
+		&::before
+			animation: destacarAnim .7s ease-out 1 forwards
+
+@keyframes destacarAnim
+	0%
+		left: -100%
+
+	100%
+		left: 0
+
+@keyframes destacarTextoAnim
+	0%
+		color: #ecc452
+
+	100%
+		color: #000

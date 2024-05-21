@@ -1,0 +1,152 @@
+@use '../base' as b
+@use '../utils' as u
+
+.link--basic
+	color: #FF5445
+	text-decoration: none
+
+	&:hover, &:focus
+		color: #BC2200
+		text-decoration: none
+		transition: color 0.3s ease-in-out
+		transition: text-decoration 0.3s ease-in-out
+
+	&:link, &:visited, &:active
+		color: #8E40B7
+		text-decoration: none
+		transition: color 0.3s ease-in-out
+		transition: text-decoration 0.3s ease-in-out
+
+.link--menu
+	position: relative
+	display: inline-block
+	font-family: "Roboto Flex", sans-serif
+	font-optical-sizing: auto
+	font-weight: 500
+	font-style: normal
+	font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712
+	color: #000
+	font-size: 1.1vw
+	text-decoration: none
+	text-transform: uppercase
+	cursor: pointer
+
+.header__menu-item
+	position: relative
+	overflow: hidden
+
+	a
+		transition: transform 0.5s ease
+		-webkit-transition: transform 0.5s ease
+
+		&::before
+			position: absolute
+			top: 100%
+			color: #BC2200
+			content: attr(title)
+			-webkit-transform: translate3d(0,0,0)
+			-moz-transform: translate3d(0,0,0)
+			transform: translate3d(0,0,0)
+
+	&:hover, &:focus
+		outline: none
+
+	&:hover a, &:focus a
+		-webkit-transform: translateY(-100%)
+		-moz-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+.link--button
+	@include u.dflex()
+	width: 100%
+	height: 100%
+	font-family: "Roboto Flex", sans-serif
+	font-optical-sizing: auto
+	font-size: 1.1vw
+	font-weight: 600
+	font-style: normal
+	font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712
+	color: #000
+	text-decoration: none
+	text-transform: uppercase
+	cursor: pointer
+	border: 2px solid #000
+	transition: background-color 0.3s ease-in-out
+	transition: color 0.3s ease-in-out
+
+	&:hover, &:focus
+		color: #fff
+		background-color: #000
+		text-decoration: none
+		transition: background-color 0.3s ease-in-out
+		transition: color 0.3s ease-in-out
+		transition: text-decoration 0.3s ease-in-out
+
+	&:visited, &:active
+		color: #000
+		text-decoration: none
+		transition: color 0.3s ease-in-out
+		transition: text-decoration 0.3s ease-in-out
+
+	@include u.s
+		font-size: 5vw
+		padding: 10px 20px
+		margin: 0 10px
+		border-radius: 5px
+		transition: background-color 0.3s ease-in-out
+		background-color: rgba(255, 255, 255, .75)
+
+.button--white
+	display: inline-block
+	width: 100%
+	max-width: 360px
+	border: 2px solid #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	text-decoration: none
+	padding: 12px 20px
+	font-size: 1.75vw
+	text-transform: uppercase
+	margin-top: 20px
+	font-weight: 500
+
+	@include u.s
+		font-size: 5vw
+
+	&:hover, &:focus
+		color: #000
+		background-color: #fff
+		text-decoration: none
+		transition: background-color 0.3s ease-in-out
+		transition: color 0.3s ease-in-out
+
+.button--black
+	display: inline-block
+	width: 100%
+	height: auto
+	border: 2px solid #000
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #000
+	text-decoration: none
+	padding: 12px 20px
+	font-size: 1.4vw
+	text-transform: uppercase
+	margin-top: 20px
+	font-weight: 500
+	text-align: center
+
+	@include u.s
+		font-size: 5vw
+		font-weight: 600
+		font-family: "Roboto Condensed", sans-serif
+
+	&:hover, &:focus
+		color: #fff
+		background-color: #000
+		text-decoration: none
+		transition: background-color 0.3s ease-in-out
+		transition: color 0.3s ease-in-out

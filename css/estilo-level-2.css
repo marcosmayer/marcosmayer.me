@@ -1,0 +1,871 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	text-align: center;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS */
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #4c4942;
+	background-image: url(../images/bg-palestras.jpg);
+	background-repeat: no-repeat;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.clear {
+	width: 100%;
+	height: 1px;
+	clear: both;
+}
+
+/* ### CONTAINER ### */
+
+.container {
+	width: 1200px;
+	height: auto;
+	min-height: 500px;
+	background-color: #171615;
+	margin: 50px auto;
+	-webkit-box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* ### MENU ### */
+
+.topnav {
+	display: none;
+}
+
+nav {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+}
+
+ul.menu li {
+	margin: 0 30px;
+}
+
+ul.menu li a {
+	display: block;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	color: #858074;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.25em;
+}
+
+ul.menu li a:hover {
+	color: #f4314c;
+}
+
+/* ### MAIN LOGO ### */
+
+.main-logo-area {
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
+}
+
+.main-logo {
+}
+
+.main-logo img {
+	width: 300px;
+	height: 39px;
+}
+
+.main-logo-frase {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	margin-top: 12px;
+}
+
+/* ### PALESTRA ### */
+
+.palestra {
+	padding: 40px 60px;
+}
+
+.palestra-palavra {
+	width: auto;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-size: 1.25em;
+	color: #171615;
+	background-color: #b1b1b1;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+}
+
+.palestra-bloco h1 {
+	font-family: "Unica One", cursive;
+	font-style: normal;
+	font-size: 4em;
+	text-align: center;
+	margin: 20px auto;
+	text-transform: uppercase;
+	letter-spacing: normal;
+}
+
+.tema-1 h1,
+.tema-1 h3,
+.tema-1-form {
+	color: #ed553b;
+}
+
+.tema-2 h1,
+.tema-2 h3,
+.tema-2-form {
+	color: #a7c520;
+}
+
+.tema-3 h1,
+.tema-3 h3,
+.tema-3-form {
+	color: #00e1f5;
+}
+
+.tema-4 h1,
+.tema-4 h3,
+.tema-4-form {
+	color: #eb3e4a;
+}
+
+.tema-5 h1,
+.tema-5 h3,
+.tema-5-form {
+	color: #9639de;
+}
+
+.tema-6 h1,
+.tema-6 h3,
+.tema-6-form {
+	color: #f2b134;
+}
+
+.tema-7 h1,
+.tema-7 h3,
+.tema-7-form {
+	color: #825534;
+}
+
+.palestra-bloco h2 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	color: #ffffff;
+	text-align: center;
+}
+
+.palestra-subtitulo {
+	margin: 20px auto;
+}
+
+.palestra-subtitulo h3 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.palestra-bloco p {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #b1b1b1;
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+.palestra-citacao {
+	width: 70%;
+	background-color: #b1b1b1;
+	padding: 30px;
+	margin: 20px auto;
+}
+
+.palestra-citacao p {
+	font-family: "Unica One", cursive;
+	font-size: 2em;
+	color: #3e3b38;
+	text-align: center;
+}
+
+.palestra-citacao p.citacao-autor {
+	font-family: "Unica One", cursive;
+	font-size: 1.25em;
+	color: #3e3b38;
+	text-align: right;
+	margin-top: 20px;
+}
+
+ul.topicos {
+	list-style: none;
+}
+
+ul.topicos li {
+	display: inline-block;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #171615;
+	padding: 3px;
+	background-color: #787878;
+	margin: 3px;
+}
+
+/* ### CONTATO ### */
+
+.palestra-proposta {
+	background-color: #2e2c2a;
+	padding: 40px 80px;
+	margin-top: 40px;
+}
+
+.contato-chamada {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-size: 3.25em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.field-name {
+	display: block;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	text-align: left;
+	color: #b1b1b1;
+	margin: 20px 0 4px;
+}
+
+.fn-telefone {
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.formato-telefone {
+	display: inline-block;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 0.6em;
+	text-align: left;
+	color: #858074;
+}
+
+ul.contato-form li {
+	text-align: left;
+}
+
+ul.contato-form {
+	list-style: none;
+}
+
+ul input,
+ul textarea {
+	width: 100%;
+	border: none;
+	background-color: #68645f;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	text-align: left;
+	color: #b1b1b1;
+}
+
+ul input {
+	height: 40px;
+}
+
+ul textarea {
+	height: 100px;
+}
+
+form {
+	position: relative;
+}
+
+button {
+	display: block;
+	width: 240px;
+	margin: 0 auto;
+	background-color: #e99605;
+	border: none;
+	height: 40px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+	color: #ffffff;
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+	background-color: #000000;
+	color: #e99605;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.error {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+		"sans-serif";
+	font-size: 0.75em;
+	color: #dd193e;
+	float: right;
+	font-weight: lighter;
+	margin-top: -14px;
+}
+
+/* ### VOLTAR ### */
+
+.voltar {
+	width: 100%;
+	height: auto;
+	margin: 20px auto;
+}
+
+.voltar a {
+	display: block;
+	width: 120px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #2e2c2a;
+	background-color: #171615;
+	border: 2px solid #2e2c2a;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	margin: 0 60px 20px 0;
+	text-decoration: none;
+	float: right;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+}
+
+.voltar a:hover {
+	color: #68645f;
+	border-color: #68645f;
+}
+
+/* ### FOOTER ### */
+
+.footer {
+	width: 100%;
+	height: 80px;
+	background-color: #ecc452;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	text-align: center;
+	color: #5e4e21;
+}
+
+.footer-2,
+.footer-3 {
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 1200px) {
+	/* # MY CSS # */
+	body {
+		background-image: none;
+	}
+
+	.container {
+		width: 990px;
+		margin: 0 auto;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	/* # CONTATO # */
+	.contato-chamada {
+		top: 44px;
+		left: 384px;
+		font-size: 2.55em;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	/* # MY CSS # */
+	body {
+		background-image: none;
+	}
+	.container {
+		width: 760px;
+		margin: 0 auto;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	/* # PALESTRA # */
+	.palestra-bloco h1 {
+		font-size: 3em;
+	}
+	.palestra-bloco h2 {
+		font-size: 1.25em;
+	}
+	.palestra-subtitulo h3 {
+		font-size: 1.25em;
+	}
+	.palestra-citacao {
+		width: 85%;
+	}
+	.palestra-citacao p {
+		font-size: 1.5em;
+	}
+
+	/* # CONTATO # */
+	.contato-chamada {
+		top: 50px;
+		left: 307px;
+		font-size: 2.25em;
+	}
+	.contato-dados {
+		width: 280px;
+	}
+	.contato-campos {
+		width: 440px;
+		padding: 34px;
+	}
+	button {
+		width: 372px;
+	}
+	/* # FOOTER # */
+	.footer-side,
+	.footer-center {
+		width: 252px;
+	}
+	.case-footer-logo {
+		width: 200px;
+		height: auto;
+	}
+	.case-footer-logo img {
+		width: 100%;
+		height: auto;
+	}
+	.footer-left-text-1 {
+		font-size: 1em;
+	}
+
+	.footer-left-text-2 {
+		font-size: 0.9em;
+	}
+	.icone {
+		width: 40px;
+		height: 40px;
+	}
+	.icone img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		background-color: #4c4942;
+		background-image: none;
+	}
+	.container {
+		width: 480px;
+		min-height: 0;
+		margin: 0 auto;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	/* # PALESTRA # */
+	.palestra {
+		padding: 30px 40px;
+	}
+	.palestra-bloco h1 {
+		font-size: 2.5em;
+	}
+	.palestra-bloco h2 {
+		font-size: 1.1em;
+	}
+	.palestra-subtitulo h3 {
+		font-size: 1.1em;
+	}
+	.palestra-citacao {
+		width: 100%;
+	}
+	.palestra-citacao p {
+		font-size: 1.5em;
+	}
+
+	/* # CONTATO # */
+	.palestra-proposta {
+		padding: 20px;
+		margin-top: 30px;
+	}
+	.contato-chamada {
+		position: relative;
+		top: auto;
+		left: auto;
+		font-size: 2em;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.contato-dados,
+	.contato-campos {
+		display: none;
+	}
+	.contato-campos-responsive {
+		display: block;
+		width: 440px;
+		height: auto;
+		background-color: #171615;
+		padding: 20px;
+	}
+	.field-name {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 400;
+		font-size: 0.9em;
+		color: #484848;
+		display: block;
+		text-align: left;
+		float: none;
+		margin-bottom: 4px;
+	}
+	.formato-telefone {
+		text-align: left;
+		display: block;
+		margin: 0 0 4px;
+	}
+	ul textarea {
+		height: 100px;
+	}
+	.form-button {
+		position: relative;
+		top: auto;
+		cursor: pointer;
+	}
+
+	.resultado {
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		top: 0;
+		background-color: #ecc452;
+		color: #252320;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	button {
+		width: 80%;
+		margin-top: 0;
+	}
+	.error {
+		position: relative;
+		display: block;
+		float: left;
+		margin-top: -16px;
+	}
+	/* # FOOTER # */
+	.footer {
+		height: auto;
+		flex-direction: column;
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		background-color: #4c4942;
+		background-image: none;
+	}
+	.container {
+		width: 360px;
+		min-height: 0;
+		margin: 0 auto;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	/* # PALESTRA # */
+	.palestra {
+		padding: 20px;
+	}
+	.palestra-palavra {
+		font-size: 1em;
+		padding: 3px 6px;
+		margin-bottom: 20px;
+	}
+	.palestra-bloco h1 {
+		font-size: 2em;
+	}
+	.palestra-bloco h2 {
+		font-size: 1em;
+	}
+	.palestra-subtitulo h3 {
+		font-size: 1em;
+	}
+	.palestra-citacao {
+		width: 100%;
+	}
+	.palestra-citacao p {
+		font-size: 1.25em;
+	}
+
+	/* # CONTATO # */
+	.contato {
+		background-position: center;
+		flex-direction: column;
+	}
+	.contato-chamada {
+		position: relative;
+		top: auto;
+		left: auto;
+		font-size: 1.75em;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.contato-dados,
+	.contato-campos {
+		display: none;
+	}
+	.contato-campos-responsive {
+		display: block;
+		width: 320px;
+		height: auto;
+		background-color: #171615;
+		padding: 20px;
+	}
+	.field-name {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 400;
+		font-size: 0.9em;
+		color: #484848;
+		display: block;
+		text-align: left;
+		float: none;
+		margin-bottom: 4px;
+	}
+	.formato-telefone {
+		text-align: left;
+		display: block;
+		float: none;
+		margin: 0 0 4px;
+	}
+	ul textarea {
+		height: 100px;
+	}
+	.form-button {
+		position: relative;
+		top: auto;
+	}
+	button {
+		width: 280px;
+	}
+	.error {
+		position: relative;
+		display: block;
+		float: left;
+		margin-top: -16px;
+	}
+
+	/* # VOLTAR # */
+	.voltar a {
+		margin: 0 20px 20px 0;
+	}
+
+	/* # FOOTER # */
+	.footer {
+		height: auto;
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.footer-side,
+	.footer-center {
+		width: 100%;
+	}
+	.footer-separator {
+		width: 320px;
+		height: 2px;
+		margin: 20px auto;
+	}
+}

@@ -1,0 +1,112 @@
+@use '../base' as b
+@use '../utils' as u
+
+.mixed-text
+	width: 100vw
+	max-width: 1200px
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	padding: 40px 10%
+	margin: 0 auto
+	color: #000
+	background-color: #fff
+
+	@include u.s
+		max-width: 90%
+		padding: 40px 0
+
+	&__paragraph
+		font-size: 1.25vw
+		text-align: center
+		line-height: 1.5
+
+		@include u.s
+			font-size: 5vw
+
+	&__box
+		font-size: 1.5vw
+		font-weight: 600
+		border: 3px solid #000
+		padding: 20px
+		margin: 20px 0
+		text-align: center
+
+		@include u.s
+			font-family: "Ubuntu", sans-serif
+			font-size: 5vw
+
+	&__list
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-direction: column
+		margin: 20px 0
+
+	&__item
+		font-size: 1.5vw
+		font-weight: 600
+		padding: 10px
+		margin: 10px
+		text-align: left
+
+		@include u.s
+			font-family: "Ubuntu", sans-serif
+			font-size: 5vw
+
+	&__letter
+		font-size: 2.5vw
+		background-color: b.$yellow
+		padding: 10px 25px
+		margin-right: 3px
+
+		@include u.s
+			font-family: "Ubuntu", sans-serif
+			font-size: 8vw
+			padding: 3px 15px
+
+	&__image-text-block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 20px 0
+
+		@include u.s
+			flex-direction: column
+
+	&__image
+		width: 40%
+		height: auto
+		display: flex
+		justify-content: center
+		align-items: center
+
+		@include u.s
+			width: 100%
+			max-width: 90%
+
+		img
+			width: 100%
+			height: auto
+
+	&__text-block
+		width: 60%
+		height: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		padding-left: 20px
+
+		p
+			text-align: left
+
+		@include u.s
+			width: 100%
+			max-width: 90%
+			padding: 0
+
+			p
+				text-align: center
