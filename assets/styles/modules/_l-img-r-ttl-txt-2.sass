@@ -1,0 +1,55 @@
+@use '../base' as b
+@use '../utils' as u
+
+.l-img-r-ttl-txt-2
+	width: 100%
+	height: auto
+	@include u.dflex()
+	padding-top: 40px
+
+	@include u.s
+		flex-direction: column
+
+	&__left
+		width: 25%
+		height: auto
+
+		img
+			width: 100%
+			height: auto
+			object-fit: cover
+			margin-left: -70px
+
+		@include u.s
+			width: 100%
+			padding: 0 5%
+			order: 2
+
+			img
+				width: 100%
+				height: auto
+				object-fit: cover
+				margin: 0
+
+	&__right
+		width: 75%
+		height: auto
+		text-align: left
+		padding-right: 15%
+		@include u.dflex(center, flex-start, column)
+
+		h2
+			font-size: 3rem
+			text-align: left
+			color: #252320
+
+		p
+			font-size: 1.5rem
+
+		@include u.s
+			width: 100%
+			padding: 0 5%
+			order: 1
+
+			h1, p
+				text-align: center

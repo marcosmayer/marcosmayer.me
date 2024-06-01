@@ -3,5 +3,5 @@
 		<h2><?= $title ?></h2>
 		<?= $text ?>
 	</div>
-	<div class="l-ttl-txt-r-img__image"></div>
+	<div class="l-ttl-txt-r-img__image <?= $class2 ?>"></div>
 </div>

@@ -1,0 +1,24 @@
+@use '../base' as b
+@use '../utils' as u
+
+.ttl-txt
+	width: 100%
+	height: auto
+	@include u.dflex()
+	padding: 40px 0
+	background-color: #e4e4e4
+
+	@include u.s
+		flex-direction: column
+
+	&__text
+		width: 100%
+		height: auto
+		max-width: 1200px
+		line-height: 1.6
+
+		h2
+			font-size: 2rem
+			font-weight: 500
+			text-transform: uppercase
+			margin-bottom: 40px

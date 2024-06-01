@@ -1,2 +1,192 @@
 @use '../base' as b
+@use '../utils' as u
 
+.form-palestras, .form-workshops, .form-innovation-lab
+	width: 100%
+	height: auto
+	background-color: #171717
+	padding: 60px 0
+
+	&__container
+		width: 100%
+		height: auto
+		max-width: 1200px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		margin: 0 auto
+
+	&__form
+		width: 100%
+		height: auto
+		font-weight: 300
+		font-size: 2rem
+		color: #8a8a8a
+		padding: 0
+
+	&__title
+		font-family: Oswald, sans-serif
+		font-size: 3rem
+		color: #ecc452
+		text-transform: uppercase
+
+	&__fieldset
+		width: 100%
+		height: auto
+		padding: 40px
+		background-color: #242424
+		margin: 40px auto 0
+		border-radius: 4px
+
+		&:first-child
+			margin-bottom: 60px
+
+	&__legend
+		font-family: Oswald, sans-serif
+		font-size: 1.5rem
+		font-weight: 400
+		color: #ecc452
+		background-color: #242424
+		padding: 5px 20px
+		border-radius: 4px
+
+	&__ul
+		list-style: none
+		margin: 0
+		padding: 0
+
+		li
+			text-align: left
+			margin-bottom: 20px
+			display: flex
+			flex-direction: column
+
+			label
+				font-size: 1rem
+				font-weight: 300
+				margin: 0 0 5px 10px
+
+			input, textarea
+				width: 100%
+				margin: 0 0 3px
+				padding: 5px 10px
+				text-align: left
+				color: #8d8d8d
+				background-color: #1f1f1f
+				border: 1px solid #303030
+				font-size: 1.5rem
+				font-weight: 300
+				border-radius: 4px
+
+				&:focus
+					outline-style: none
+					outline: none
+					box-shadow: none
+					border-color: #ecc452
+
+			input
+				height: 50px
+
+				&::placeholder
+					color: #363636
+
+			input[type="checkbox"]
+				width: 16px
+				height: 16px
+				margin-top: -5px
+
+			textarea
+				height: 160px
+
+	&__checkbox-area
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 4px 0
+
+		&:first-of-type
+			margin-top: 20px
+
+	&__button
+		margin-top: 40px
+		@include u.dflex()
+
+		button
+			width: 100%
+			max-width: 400px
+			background-color: #e99605
+			cursor: pointer
+			border: none
+			border-radius: 4px
+			font-weight: 600
+			font-size: 2rem
+			text-align: center
+			color: #ffffff
+			-webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5)
+			-moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5)
+			box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5)
+			padding: 20px 40px
+
+			&:hover
+				background-color: #ffffff
+				color: #e99605
+				-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7)
+				-moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7)
+				box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7)
+				transition: all 0.3s ease
+
+.error-message
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif
+	font-size: 0.9rem
+	color: #dd193e
+	font-weight: lighter
+	margin-top: 5px
+	margin-left: 10px
+
+.sucesso
+	width: 100%
+	height: auto
+
+	&__container
+		width: 100%
+		max-width: 1200px
+		height: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		margin: 0 auto
+		padding: 60px 0
+
+		p
+			font-size: 1.5rem
+			margin-top: 40px
+
+		p.sucesso__message
+			font-size: 1.1rem
+			line-height: 1.75
+			color: #252320
+			text-align: center
+			margin-top: 40px
+			border: 1px solid #252320
+			padding: 20px 40px
+
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 40px
+		text-decoration: none
+		color: #252320
+		background-color: #ecc452
+		padding: 20px 40px
+		font-size: 1.25rem
+		font-weight: 500
+
+		&:hover
+			background-color: #252320
+			color: #ecc452
+			transition: all 0.3s ease

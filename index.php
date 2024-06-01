@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <?php
-$pageTitle = 'Marcos Mayer: palestrante, Consultor, Escritor e Empreendedor';
+$pageTitle = 'Marcos Mayer: Palestrante, Consultor, Escritor e Empreendedor';
 $pageDescription = 'Cada pessoa tem um potencial infinito. Cada um de nós pode ser o seu próprio case. O programa de desenvolvimento humano chamado Seja o Seu C.A.S.E. apresenta as etapas importantes dessa transformação.';
 include 'components/head.php';
 ?>
@@ -28,11 +28,9 @@ include 'components/head.php';
 	?>
 	<?php include 'modules/v-items.php'; ?>
 	<?php include 'modules/b-your-case.php'; ?>
-	<?php
-	$title = 'Marcos Mayer';
-	$text = '<p>Marcos Mayer teve uma carreira como executivo de marketing, com uma ascenção muito rápida, e uma segunda carreira na criação em agências, gerando ideias para grandes empresas multinacionais. Durante toda trajetória, a criatividade sempre foi o seu “super poder”.</p><p>Chegou então o momento de iniciar sua terceira carreira, na qual Marcos está exercendo sua verdadeira vocação: ajudar pessoas e organizações a terem condições de existir plenamente, com o máximo aproveitamento de seu potencial, dependendo apenas de sua própria decisão para terem sucesso.</p><p>“Hoje, o melhor que eu posso fazer para transformar o mundo em um lugar melhor é contagiar o maior número possível de pessoas com a criatividade. Esse é o caminho para continuarmos existindo, de forma sustentável, e para fazermos aquilo que nos faz humanos: descobrir e criar o novo.”</p>';
-	include 'modules/l-img-r-ttl-txt.php';
-	?>
+	<?php include 'modules/ttl-3-box.php'; ?>
+	<?php include 'modules/txt-btn.php'; ?>
+	<?php include 'modules/ttl-l-img-r-txt-btn.php'; ?>
 	<?php include 'modules/clientes.php'; ?>
 	<?php include 'components/footer.php'; ?>
 	<script src="/assets/scripts/scripts.js"></script>

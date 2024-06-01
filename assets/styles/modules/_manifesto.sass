@@ -1,0 +1,44 @@
+@use '../base' as b
+@use '../utils' as u
+
+.manifesto
+	width: 100%
+	height: auto
+	@include u.dflex(center, center, column)
+	background-color: #dadada
+	padding: 40px 0 0 0
+
+	h1
+		color: #373737
+		background-color: #fbdb42
+		padding: 7px 25px
+
+	@include u.s
+		padding: 0 5%
+
+	&__content
+		width: 100%
+		max-width: 1200px
+		height: auto
+		@include u.dflex(center, center, column)
+		margin: 40px auto
+
+	&__text
+		width: 100%
+		height: auto
+		@include u.dflex(center, center, column)
+		border-left: 7px solid #373737
+		padding-left: 40px
+
+		h3
+			text-align: center
+			font-weight: 400
+			font-size: 1.1rem
+			text-align: left
+			line-height: 1.5
+
+	&__divider
+		width: 100%
+		height: 1px
+		background-color: #848484
+		margin: 40px 0

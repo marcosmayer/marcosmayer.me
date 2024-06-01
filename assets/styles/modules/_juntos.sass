@@ -1,0 +1,65 @@
+@use '../base' as b
+@use '../utils' as u
+
+.juntos
+	width: 100%
+	height: auto
+	@include u.dflex(center, center, column)
+	background-color: #373737
+	padding: 40px 0 0 0
+
+	h1
+		color: #ffffff
+
+	&__content
+		width: 100%
+		max-width: 1200px
+		height: auto
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-gap: 60px
+		margin: 20px auto 60px auto
+
+		@include u.s
+			grid-template-columns: 1fr
+			grid-template-rows: repeat(3, auto)
+
+	&__box
+		width: 100%
+		height: auto
+		background-color: #fbdb42
+		padding: 40px 20px
+		text-align: center
+		color: #373737
+		@include u.dflex(space-between, center, column)
+
+	&__title
+		font-size: 1.25rem
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 20px
+
+	&__text
+		width: 100%
+		height: auto
+		font-size: 1rem
+		margin-bottom: 20px
+
+	&__button
+		width: 100%
+		max-width: 80%
+		height: auto
+		border-radius: 5px
+		background-color: #373737
+		color: #ffffff
+		padding: 10px 20px
+		text-transform: uppercase
+		font-weight: 600
+		margin-top: auto
+		cursor: pointer
+		transition: all 0.3s
+		border: 0
+
+		&:hover
+			background-color: #4f4f4f
+			transition: all 0.3s
