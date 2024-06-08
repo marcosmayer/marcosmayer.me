@@ -5,6 +5,11 @@
 	display: flex
 	flex-direction: row
 
+	&--ciclo
+		background-color: #252320
+		color: #ffffff
+		height: auto
+
 	&__text
 		flex: 1 1 60%
 		padding: 40px
@@ -23,7 +28,6 @@
 
 		p
 			font-weight: 400
-			color: #252320
 			font-size: 1.1rem
 			text-align: right
 			line-height: 1.75rem
@@ -33,15 +37,29 @@
 			&.p--destacado
 				font-weight: 600
 
+		&--ciclo
+			flex: 1 1 50%
+			padding-left: 100px
+
+			h2
+				color: #ffffff
+
+			p
+				line-height: 2rem
+
 	&__image
 		background-image: url(../images/mm-simpatico.jpg)
 		flex: 1 1 40%
 		width: 40vw
 		height: 40vw
-		background-color: #ffffff
 		background-position: center center
 		background-repeat: no-repeat
 		background-size: cover
+
+		&--ciclo
+			background-image: unset
+			flex: 1 1 50%
+			height: auto
 
 		&--sobre
 			background-image: url(../images/mm-multiple.jpg)

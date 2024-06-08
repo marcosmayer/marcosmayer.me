@@ -1,13 +1,13 @@
 <section class="footer">
 	<ul class="footer__menu">
 		<li class="footer__menu-item"><a class="footer__menu-link" href="/" title="Conheça o Marcos">Início</a></li>
-		<li class="footer__menu-item"><a class="footer__menu-link" href="/marcos-mayer/" title="Conheça o Marcos">Conheça o Marcos</a></li>
-		<li class="footer__menu-item"><a class="footer__menu-link" href="/palestras/" title="Palestras">Palestras</a></li>
-		<li class="footer__menu-item"><a class="footer__menu-link" href="/workshops/" title="Workshops">Workshops</a></li>
-		<li class="footer__menu-item"><a class="footer__menu-link" href="/innovation-lab/" title="Innovation Lab">Innovation Lab</a></li>
-		<li class="footer__menu-item"><a class="footer__menu-link" href="/seja-o-seu-case/" title="Seja o Seu C.A.S.E.">Seja o Seu C.A.S.E.</a></li>
+		<li class="footer__menu-item"><a class="footer__menu-link" href="/pages/marcos-mayer/" title="Conheça o Marcos">Conheça o Marcos</a></li>
+		<li class="footer__menu-item"><a class="footer__menu-link" href="/pages/palestras/" title="Palestras">Palestras</a></li>
+		<li class="footer__menu-item"><a class="footer__menu-link" href="/pages/workshops/" title="Workshops">Workshops</a></li>
+		<li class="footer__menu-item"><a class="footer__menu-link" href="/pages/innovation-lab/" title="Innovation Lab">Innovation Lab</a></li>
+		<li class="footer__menu-item"><a class="footer__menu-link" href="/pages/seja-o-seu-case/" title="Seja o Seu C.A.S.E.">Seja o Seu C.A.S.E.</a></li>
 		<li class="footer__menu-item"><a class="footer__menu-link" href="/blog/" title="Blog">Blog</a></li>
-		<li class="footer__menu-item"><a class="footer__menu-link" href="/contato/" title="Contato">Contato</a></li>
+		<li class="footer__menu-item"><a class="footer__menu-link" href="/pages/contato/" title="Contato">Contato</a></li>
 	</ul>
 	<div class="footer__logo">
 		<img src="/assets/images/logo-marcos-mayer.svg" alt="Marcos Mayer - Palestrante">

@@ -1,0 +1,211 @@
+.blog-post
+	width: 100%
+	height: auto
+	padding: 60px 0 100px 0
+
+	&__container
+		width: 100%
+		max-width: 1200px
+		margin: 0 auto
+
+	&__header
+		width: 100%
+		height: auto
+		text-align: center
+
+		h1
+			font-size: 2.5rem
+			color: #252320
+			margin-bottom: 40px
+
+		h2
+			padding-bottom: 10px
+			border-bottom: 2px solid #000
+			display: inline-block
+			text-align: center
+			margin: 0 auto 20px auto
+
+	&__date
+		font-size: 1rem
+		color: #666666
+		margin: 0 100px 40px 100px
+		text-align: left
+
+	&__area
+		width: 900px
+		height: auto
+		display: flex
+		margin: 0 auto
+
+	&__image
+		width: 100%
+		height: auto
+		margin-bottom: 30px
+
+	&__tirinha
+		width: 100%
+		height: auto
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-gap: 20px
+
+	&__quadrinho
+		width: 100%
+		height: auto
+
+		img
+			width: 100%
+			height: auto
+
+	&__content
+		width: 75%
+		height: auto
+		border-right: 1px solid #e6e6e6
+		padding: 30px 40px 0 0
+
+		p
+			font-size: 1.2rem
+			color: #252320
+			character-spacing: unset
+			line-height: 1.5
+
+		a
+			color: #ff3c00
+			text-decoration: none
+			padding-bottom: 2px
+			border-bottom: 3px solid #252320
+			font-weight: 500
+
+			&:hover
+				color: #252320
+				background-color: #ff3c00
+				transition: background-color 0.5s, color 0.5s
+
+		h2
+			text-align: left
+			margin-top: 30px
+			border-bottom: 1px solid #d4d4d4
+			padding-block: 10px
+			margin-bottom: 30px
+
+		ul
+			list-style: none
+			margin: 0
+
+			li
+				border-left: 4px solid #ff3c00
+				font-size: 1.2rem
+				line-height: 1.5
+				margin: 0 0 15px 0
+				padding-left: 20px
+
+		&--citacoes, &--glossario
+			width: 100%
+			border: 0
+			padding-top: 0
+
+	&__extras
+		width: 25%
+		height: auto
+		min-height: 200px
+		background-color: #f9f9f9
+
+	&__words-counter
+		width: 50%
+		height: auto
+		min-width: 400px
+		margin: 40px auto 0 auto
+		border: 1px solid #e4e4e4
+		box-shadow: -2px 2px 4px 1px rgb(0 0 0 / 10%)
+		padding: 20px
+		border-radius: 4px
+
+		p
+			margin: 0
+			font-size: 0.9rem
+
+	&__contagem
+		width: 100%
+		height: 40px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-bottom: 1px solid #e4e4e4
+
+	&__citacao
+		position: relative
+		width: 920px
+		height: 500px
+		background-color: #74052a
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.25)
+		margin: 100px 0 100px 0
+
+	&__citacao-imagem
+		position: absolute
+		width: 460px
+		height: 460px
+		left: 45%
+		top: -20px
+		box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.25)
+
+		img
+			width: 100%
+			height: auto
+
+	&__citacao-area
+		position: absolute
+		width: 540px
+		height: 400px
+		background-color: rgba(255, 255, 255, 0.9)
+		box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.25)
+		right: 55%
+		top: 10px
+		padding: 40px 70px
+		display: flex
+		flex-flow: column
+		justify-content: center
+		align-items: center
+
+	&__citacao-linha
+		width: 100%
+		height: 1px
+		background-color: #74052a
+
+	&__citacao-frase
+		color: #708590
+		font-size: 1.25rem
+		margin: 40px 0
+		line-height: 1.5
+
+	&__citacao-autor
+		width: 100%
+		color: 74052a
+		text-align: right
+		font-weight: 100
+		font-size: 1rem
+		margin-top: 20px
+
+	&__glossario
+		width: 100%
+		max-width: 800px
+		height: auto
+		border: 1px solid #d4d4d4
+		margin: 0 auto 80px auto
+		padding: 40px
+		box-shadow: -15px 15px 30px 10px rgba(0, 0, 0, 0.2)
+
+	&__glossario-title
+		color: #525252
+		font-size: 3rem
+		letter-spacing: 3
+
+	&__glossario-line
+		width: 50%
+		height: 2px
+		background-color: #525252
+		margin: 30px auto 30px 0
+
+	&__glossario-definition
+		font-size: 1.75rem
+		color: #525252
