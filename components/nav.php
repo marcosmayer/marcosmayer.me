@@ -7,7 +7,8 @@
 	<a href="/pages/seja-o-seu-case/">Seja o Seu C.A.S.E.</a>
 	<a href="/blog/">Blog</a>
 	<a href="/pages/contato/">Contato</a>
-	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	<a href="/pages/reserva/">RESERVE SUA DATA</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span></a>
 </div>
 <div class="header">
 	<div class="logo"><a href="/"><img src="/assets/images/logo-marcos-mayer.svg" alt="Marcos Mayer - Criatividade e Inovação"></a></div>

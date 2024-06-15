@@ -1,0 +1,508 @@
+@use '../../styles/base' as b
+@use '../../styles/utils' as u
+
+.apresentacao
+	width: 100%
+	height: 40vw
+	background-color: #ffffff
+	display: flex
+	flex-direction: row
+
+	@include u.s
+		height: auto
+		flex-direction: column
+
+	&--ciclo
+		background-color: #252320
+		color: #ffffff
+		height: auto
+
+	&__text
+		flex: 1 1 60%
+		padding: 40px
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+		@include u.s
+			flex: unset
+			text-align: center
+			order: 2
+			width: 100%
+			height: auto
+
+		h2
+			font-size: 2rem
+			font-weight: 500
+			text-transform: uppercase
+			text-align: right
+			margin-bottom: 1rem
+			text-align: right
+
+			@include u.s
+				text-align: center
+
+		p
+			font-weight: 400
+			font-size: 1.1rem
+			text-align: right
+			line-height: 1.75rem
+			margin-bottom: 1rem
+			text-align: right
+
+			@include u.s
+				text-align: center
+
+			&.p--destacado
+				font-weight: 600
+
+		&--ciclo
+			flex: 1 1 50%
+			padding-left: 100px
+
+			h2
+				color: #ffffff
+
+			p
+				line-height: 2rem
+
+	&__image
+		background-image: url(../images/mm-simpatico.jpg)
+		flex: 1 1 40%
+		width: 40vw
+		height: 40vw
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+
+		@include u.s
+			flex: unset
+			width: 100%
+			height: 100vw
+			order: 1
+
+		&--ciclo
+			background-image: unset
+			flex: 1 1 50%
+			height: auto
+
+		&--sobre
+			background-image: url(../images/mm-multiple.jpg)
+
+.despertar
+	width: 100%
+	height: 40vw
+	display: flex
+	flex-direction: row
+	background-color: #252320
+	color: #ffffff
+
+	@include u.s
+		height: auto
+		flex-direction: column
+
+	&__image
+		background-image: url(../images/mm-explode.jpg)
+		flex: 1 1 50%
+		width: 50vw
+		height: 40vw
+		background-color: #ffffff
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+
+		@include u.s
+			flex: unset
+			width: 100%
+			height: 100vw
+
+	&__text
+		flex: 1 1 50%
+		padding: 80px
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+		@include u.s
+			flex: unset
+			padding: 20px
+
+	h2
+		font-size: 3rem
+		font-weight: 500
+		text-transform: uppercase
+		text-align: left
+		margin-bottom: 1rem
+		color: #ffffff
+		font-size: 2.5rem !important
+
+		@include u.s
+			text-align: center
+			font-size: 2rem !important
+
+	p
+		font-weight: 400
+		font-size: 1.1rem
+		text-align: left
+		margin-bottom: 1rem
+		line-height: 1.75rem
+
+		@include u.s
+			text-align: center
+
+.desafios
+	width: 100%
+	height: auto
+	@include u.dflex()
+	padding-top: 40px
+
+	@include u.s
+		flex-direction: column
+		text-align: center
+		padding: 40px 20px 0 20px
+
+	&__left
+		width: 25%
+		height: auto
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+
+		img
+			width: 100%
+			height: auto
+			object-fit: cover
+			margin-left: -70px
+
+		@include u.s
+			width: 100%
+			padding: 0
+			order: 2
+
+			img
+				width: 100%
+				height: auto
+				object-fit: cover
+				margin: 0
+				padding: 0
+
+	&__right
+		width: 75%
+		height: auto
+		text-align: left
+		padding-right: 15%
+		@include u.dflex(center, flex-start, column)
+
+		h2
+			font-size: 3rem
+			text-align: left
+			color: #252320
+
+			@include u.s
+				text-align: center
+
+		p
+			font-size: 1.5rem
+
+		@include u.s
+			width: 100%
+			padding: 0
+			order: 1
+
+			h1, p
+				text-align: center
+
+.missao
+	width: 100%
+	height: auto
+	@include u.dflex()
+	background-color: #ecc452
+
+	@include u.s
+		flex-direction: column
+		text-align: center
+		padding: 40px 20px 0 20px
+
+	&__left
+		width: 50%
+		height: auto
+		text-align: left
+		padding: 0 0 0 80px
+		@include u.dflex(center, flex-end, column)
+
+		@include u.s
+			padding: 0
+
+		p
+			font-size: 1.5rem
+			text-align: right
+
+			@include u.s
+				text-align: center
+
+		h2
+			font-size: 2.5rem
+			text-align: right
+
+			@include u.s
+				text-align: center
+
+		@include u.s
+			width: 100%
+
+	&__destaque
+		font-size: 1.5rem
+		font-weight: 600
+		text-align: right
+		padding-bottom: 7px
+		border-bottom: 4px solid #252320
+
+		@include u.s
+			text-align: center
+			margin-bottom: 40px
+			padding-bottom: 30px
+
+	&__right
+		width: 50%
+		height: auto
+		@include u.dflex(flex-end, center, row)
+
+		img
+			width: 65%
+			height: auto
+
+		@include u.s
+			width: 100%
+			padding: 0 5%
+
+			img
+				width: 100%
+				height: auto
+				object-fit: cover
+				margin: 0
+
+.hoje
+	width: 100%
+	height: auto
+	@include u.dflex()
+	padding: 40px 0
+
+	@include u.s
+		flex-direction: column
+		padding: 0 0 40px 0
+
+	&__left
+		width: 50%
+		height: auto
+		@include u.dflex(flex-end, center, row)
+
+		img
+			width: 65%
+			height: auto
+
+		@include u.s
+			width: 100%
+
+			img
+				width: 100%
+				height: auto
+				object-fit: cover
+				margin: 0
+
+	&__right
+		width: 50%
+		height: auto
+		text-align: left
+		padding: 0 10% 0 40px
+		@include u.dflex(center, flex-start, column)
+
+		@include u.s
+			padding: 0 20px 0 20px
+
+		p
+			font-size: 1.1rem
+
+			@include u.s
+				font-size: 1.25rem
+
+		@include u.s
+			width: 100%
+			padding: 20px 5% 0 5%
+
+			p
+				text-align: center
+
+.conduta
+	width: 100%
+	height: auto
+	@include u.dflex(center, center, column)
+	background-color: #fbdb42
+	padding: 40px 0 0 0
+
+	@include u.s
+		padding: 40px 20px
+
+	h1
+		color: #373737
+
+	h2
+		color: #373737
+
+		@include u.s
+			margin-top: 30px
+
+	&__modules
+		display: grid
+		grid-template-columns: repeat(5, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+		grid-gap: 40px
+		max-width: 1200px
+		margin: 40px auto
+
+		@include u.s
+			grid-template-columns: 1fr
+			grid-template-rows: repeat(10, auto)
+			row-gap: 80px
+
+	&__module
+		width: 100%
+		height: auto
+		@include u.dflex(flex-start, center, column)
+
+		img
+			width: 80%
+			height: auto
+
+		h3
+			text-align: center
+			margin-top: -30px
+			font-size: 1.1rem
+
+			@include u.s
+				font-size: 2rem
+
+.manifesto
+	width: 100%
+	height: auto
+	@include u.dflex(center, center, column)
+	background-color: #dadada
+	padding: 40px 0 0 0
+
+	@include u.s
+		padding: 40px 20px
+
+	h1
+		color: #373737
+		background-color: #fbdb42
+		padding: 7px 25px
+
+		@include u.s
+			color: #fbdb42
+			background-color: #373737
+
+	h2
+		color: #373737
+
+		@include u.s
+			margin-top: 30px
+
+	&__content
+		width: 100%
+		max-width: 1200px
+		height: auto
+		@include u.dflex(center, center, column)
+		margin: 40px auto
+
+	&__text
+		width: 100%
+		height: auto
+		@include u.dflex(center, center, column)
+		border-left: 7px solid #373737
+		padding-left: 40px
+
+		@include u.s
+			border-left: 4px solid #373737
+			padding-left: 30px
+
+	&__divider
+		width: 100%
+		height: 1px
+		background-color: #848484
+		margin: 40px 0
+
+	&__crenca
+		font-weight: 500
+
+		@include u.s
+			font-size: 1.15rem
+			line-height: 1.4
+
+.juntos
+	width: 100%
+	height: auto
+	@include u.dflex(center, center, column)
+	background-color: #373737
+	padding: 40px 0 0 0
+
+	h1
+		color: #ffffff
+
+	&__content
+		width: 100%
+		max-width: 1200px
+		height: auto
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-gap: 60px
+		margin: 20px auto 60px auto
+
+		@include u.s
+			grid-template-columns: 1fr
+			grid-template-rows: repeat(3, auto)
+
+	&__box
+		width: 100%
+		height: auto
+		background-color: #fbdb42
+		padding: 40px 20px
+		text-align: center
+		color: #373737
+		@include u.dflex(space-between, center, column)
+
+	&__title
+		font-size: 1.25rem
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 20px
+
+	&__text
+		width: 100%
+		height: auto
+		font-size: 1rem
+		margin-bottom: 20px
+
+		@include u.s
+			font-size: 1.25rem
+
+	&__button
+		width: 100%
+		max-width: 80%
+		height: auto
+		border-radius: 5px
+		background-color: #373737
+		color: #ffffff
+		padding: 10px 20px
+		text-transform: uppercase
+		font-weight: 600
+		margin-top: auto
+		cursor: pointer
+		transition: all 0.3s
+		border: 0
+
+		@include u.s
+			padding: 20px
+			font-size: 1.25rem
+
+		&:hover
+			background-color: #4f4f4f
+			transition: all 0.3s

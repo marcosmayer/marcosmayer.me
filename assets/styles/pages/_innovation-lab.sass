@@ -1,0 +1,208 @@
+@use '../../styles/base' as b
+@use '../../styles/utils' as u
+
+.i-lab
+	width: 100%
+	height: auto
+	min-height: 50vw
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0
+	padding: 0
+	background-image: url('../images/bg-innovation-lab.jpg')
+	background-size: contain
+
+	@include u.s
+		min-height: unset
+		background-size: cover
+
+	&__text
+		width: 50%
+		height: auto
+		margin-left: 50%
+		background-color: rgba(0, 0, 0, 0.75)
+		padding: 40px
+
+		@include u.s
+			width: 100%
+			margin-left: 0
+
+		h1
+			color: #ecc452
+			font-size: 2rem
+			text-align: left
+			text-transform: uppercase
+
+		p
+			color: #ffffff
+			font-size: 1.5rem
+			line-height: 2.5rem
+			margin: 40px 0 0 0
+
+.desafio-inovacao
+	width: 100%
+	height: auto
+	@include u.dflex()
+	padding: 40px 0
+	background-color: #e4e4e4
+
+	@include u.s
+		flex-direction: column
+		padding: 40px 20px
+
+	&__text
+		width: 100%
+		height: auto
+		max-width: 1200px
+		line-height: 1.6
+
+		@include u.s
+			font-size: 1.25rem
+
+		h2
+			font-size: 2rem
+			font-weight: 500
+			text-transform: uppercase
+			margin-bottom: 40px
+
+			@include u.s
+				margin: 30px auto
+				line-height: 1.25
+
+		h3
+
+			@include u.s
+				margin: 30px auto
+				font-size: 1.75rem
+
+.innovation-lab
+	width: 100%
+	height: auto
+	padding: 40px 0
+	background-color: #252320
+
+	&__innovation-lab
+		width: 100%
+		height: auto
+		max-width: 1200px
+		margin: 0 auto
+		padding: 40px 0
+
+		@include u.s
+			padding: 0
+
+		h2
+			font-size: 2rem
+			font-weight: 500
+			text-transform: uppercase
+			margin-bottom: 40px
+			color: #ecc452
+
+		p
+			font-size: 1.1rem
+			font-weight: 300
+			margin-bottom: 20px
+			color: #ffffff
+			line-height: 1.6
+
+	&__title
+		width: 100%
+		background-color: #f3452b
+		text-align: center
+		padding: 20px 0
+		margin: 0
+
+		h3
+			margin: 0
+			padding: 0
+			color: #252320
+			font-family: "Bebas Neue", sans-serif
+			font-weight: 600
+			text-transform: uppercase
+			font-size: 2.5rem
+
+	&__tagline
+		background-color: #171717
+		text-align: center
+		padding: 20px 40px 20px 40px
+
+		h4
+			margin: 0
+			padding: 0
+			color: #ffffff
+			font-weight: 400
+			font-size: 1.5rem
+			color: #ecc452
+
+	&__description
+		background-color: #303030
+		display: flex
+
+		p
+			margin: 0 0 20px 0
+			padding: 0
+			font-weight: 300
+
+			&:last-child
+				margin: 0
+
+	&__image
+		width: 30%
+		height: auto
+		background-size: cover
+		background-position: center
+
+		@include u.s
+			display: none
+
+		&--case
+			background-image: url('../images/bg-palestras-case.jpg')
+
+		&--inovacao
+			background-image: url('../images/bg-palestras-inovacao.jpg')
+
+		&--futuro
+			background-image: url('../images/bg-palestras-futuro.jpg')
+
+	&__text
+		width: 70%
+		padding: 40px
+		color: #ffffff
+		text-align: justify
+		line-height: 1.5
+
+		@include u.s
+			width: 100%
+			text-align: left
+			padding: 40px 20px
+
+		h5
+			font-size: 1.35rem
+			font-weight: 400
+			margin-bottom: 20px
+			color: #ecc452
+
+	&__divider
+		width: 100%
+		max-width: 200px
+		height: 2px
+		background-color: #ecc452
+		margin: 30px 0 30px 0
+
+.ul__workshop
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+	li
+		width: 100%
+		height: auto
+		padding: 20px
+		border: 1px solid #ffffff
+		border-left: 5px solid #ecc452
+		margin-bottom: 20px
+
+		&:hover
+			border: 1px solid #ecc452
+			border-left: 5px solid #ffffff

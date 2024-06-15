@@ -9,12 +9,14 @@ include '../../components/head.php';
 
 <body>
 	<?php include '../../components/nav.php'; ?>
-	<section class="f-bg-img-r-ttk-txt f-bg-img-r-ttk-txt--seja-o-seu-case">
-		<div class="f-bg-img-r-ttk-txt__text f-bg-img-r-ttk-txt__text--seja-o-seu-case">
+	<!-- // ! Apresentação SOSC -->
+	<section class="sosc">
+		<div class="sosc__text">
 			<h1>Seja o seu próprio C.A.S.E.</h1>
 			<p>Não existe nenhuma razão para que você não seja a pessoa que você mais admira. Não é sobre competir com alguém outro. É sobre você sair de onde está e caminhar na direção de onde quer estar. Um dia de cada vez. Até tornar-se o seu próprio case.</p>
 		</div>
 	</section>
+	<!-- // ! Conheça o programa -->
 	<section class="seja-o-seu-case">
 		<div class="seja-o-seu-case__container">
 			<h2>Conheça o programa Seja o Seu C.A.S.E.</h2>
@@ -45,13 +47,15 @@ include '../../components/head.php';
 			<p>Seja o seu próprio case: Não existe nenhuma razão para que você não seja a pessoa que você mais admira. Junte-se a nós nesta jornada e descubra como você pode decifrar o código da criatividade e transformar sua vida pessoal e profissional.</p>
 		</div>
 	</section>
-	<section class="l-ttl-txt-r-img l-ttl-txt-r-img--ciclo">
-		<div class="l-ttl-txt-r-img__text l-ttl-txt-r-img__text--ciclo">
+	<!-- // ! Ciclo contínuo -->
+	<section class="ciclo">
+		<div class="ciclo__text">
 			<h2>Ciclo de Desenvolvimento Contínuo</h2>
 			<p>No coração do programa <mark>Seja o Seu C.A.S.E.</mark> está um poderoso ciclo de desenvolvimento contínuo, no qual a criatividade é a força central que impulsiona o crescimento das quatro capacidades essenciais: autoconfiança, adaptação às mudanças, solução de problemas e expressão.</p>
 		</div>
-		<div class="l-ttl-txt-r-img__image l-ttl-txt-r-img__image--ciclo"><img src="../../assets/images/creativity-circle.png" alt="Ciclo de Desenvolvimento Contínuo"></div>
+		<div class="ciclo__image"><img src="../../assets/images/creativity-circle.png" alt="Ciclo de Desenvolvimento Contínuo"></div>
 	</section>
+	<!-- // ! Os 4 círculos -->
 	<section class="four-circles">
 		<div class="four-circles__container">
 			<div class="four-circles__title">Imagine a criatividade como o núcleo de um sistema dinâmico, cercado por quatro círculos interligados:</div>
@@ -93,6 +97,7 @@ include '../../components/head.php';
 		</div>
 	</section>
 	<?php include '../../components/footer.php'; ?>
+	<script src="/assets/scripts/nav.js"></script>
 	<script src="/assets/scripts/scripts.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
 	<script>

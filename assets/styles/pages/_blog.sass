@@ -1,139 +1,148 @@
+@use '../../styles/base' as b
+@use '../../styles/utils' as u
+
 .blog
-	display: grid
-	width: 100%
-	height: auto
-	min-height: calc(100vh - 100px)
-	grid-template-columns: repeat(6, 1fr)
-	grid-template-rows: repeat(3, 1fr)
-	grid-gap: 10px 10px
-	background-color: #252320
-	grid-template-areas: "artigos artigos ad ad palavra-de-ia palavra-de-ia" "tendencias-e-futurismo quem-disse cem-palavras cem-palavras tirinhas zen-por-cento" "tendencias-e-futurismo inovacoes inovacoes glossario glossario zen-por-cento"
-	color: #ffffff
-	padding: 10px 0
+    display: grid
+    width: 100%
+    height: auto
+    min-height: calc(100vh - 100px)
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+    grid-gap: 10px 10px
+    background-color: #252320
+    grid-template-areas: "artigos artigos ad ad palavra-de-ia palavra-de-ia" "tendencias-e-futurismo quem-disse cem-palavras cem-palavras tirinhas zen-por-cento" "tendencias-e-futurismo inovacoes inovacoes glossario glossario zen-por-cento"
+    color: #ffffff
+    padding: 10px 0
 
-	&__grid-item
-		width: 100%
-		height: 100%
-		background-color: #ecc452
-		background-position: center center
-		background-repeat: no-repeat
-		background-size: cover
-		display: flex
+    @include u.s
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(10, 1fr)
+        grid-template-areas: "artigos" "tendencias-e-futurismo" "quem-disse" "ad" "palavra-de-ia" "cem-palavras" "tirinhas" "zen-por-cento" "inovacoes" "glossario"
+        min-height: unset
 
-	&__grid-link
-		display: flex
-		flex-direction: row
-		align-items: center
-		justify-content: flex-start
-		position: relative
-		width: 100%
-		height: 100%
-		text-decoration: none
+    &__grid-item
+        width: 100%
+        height: 100vw
+        background-color: #ecc452
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        display: flex
 
-		&:hover
-			background-color: rgba(0,0,0,0.5)
+    &__grid-link
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: flex-start
+        position: relative
+        width: 100%
+        height: 100%
+        text-decoration: none
 
-		&--image
-			flex-direction: column
+        &:hover
+            background-color: rgba(0,0,0,0.5)
 
-	&__grid-text
-		width: 100%
-		height: 60px
-		display: flex
-		align-self: flex-end
-		align-items: center
-		justify-content: center
+        &--image
+            flex-direction: column
 
-		p
-			font-family: 'Oswald', sans-serif
-			font-size: 1.6rem
-			font-weight: 500
-			text-transform: uppercase
+    &__grid-text
+        width: 100%
+        height: 60px
+        display: flex
+        align-self: flex-end
+        align-items: center
+        justify-content: center
 
-		&--yellow
-			background-color: rgba(236,196,82,0.8)
+        p
+            font-family: "Bebas Neue", sans-serif
+            font-size: 1.6rem
+            font-weight: 500
+            text-transform: uppercase
 
-			p
-				color: #252320
+        &--yellow
+            background-color: rgba(236,196,82,0.8)
 
-		&--gray
-			background-color: rgba(37,35,32,0.8)
+            p
+                color: #252320
 
-			p
-				color: #ecc452
+        &--gray
+            background-color: rgba(37,35,32,0.8)
 
-	&__grid-title
-		position: absolute
-		text-align: right
-		right: 20px
-		top: 20px
-		color: #ffffff
-		font-size: 1.5rem
-		text-shadow: -2px 2px 4px black
-		padding-left: 30px
+            p
+                color: #ecc452
 
-		&--inverted
-			right: unset
-			top: unset
-			left: 20px
-			bottom: 20px
-			padding-left: unset
-			padding-right: 30px
-			text-align: left
+    &__grid-title
+        position: absolute
+        text-align: right
+        right: 20px
+        top: 20px
+        color: #ffffff
+        font-size: 1.5rem
+        text-shadow: -2px 2px 4px black
+        padding-left: 30px
 
-		&--bottom
-			right: 20px
-			top: unset
-			bottom: 70px
+        &--inverted
+            right: unset
+            top: unset
+            left: 20px
+            bottom: 20px
+            padding-left: unset
+            padding-right: 30px
+            text-align: left
 
-	&__grid-image
-		width: 100%
-		height: 100%
-		display: flex
-		align-self: center
-		align-items: center
-		justify-content: center
+        &--bottom
+            right: 20px
+            top: unset
+            bottom: 70px
 
-		img
-			width: 20vw
-			height: auto
+    &__grid-image
+        width: 100%
+        height: 100%
+        display: flex
+        align-self: center
+        align-items: center
+        justify-content: center
 
-	.artigos
-		grid-area: artigos
-		background-image: url(../images/blog/grid-artigos.jpg)
+        img
+            width: 20vw
+            height: auto
 
-	.ad
-		grid-area: ad
-		background-image: url(../images/blog/grid-ad.jpg)
+    .artigos
+        grid-area: artigos
+        background-image: url(../images/blog/grid-artigos.jpg)
 
-	.palavra-de-ia
-		grid-area: palavra-de-ia
-		background-image: url(../images/blog/grid-palavra-de-ia.jpg)
+    .ad
+        grid-area: ad
+        background-image: url(../images/blog/grid-ad.jpg)
 
-	.tendencias-e-futurismo
-		grid-area: tendencias-e-futurismo
-		background-image: url(../images/blog/grid-tendencias-e-futurismo.jpg)
+    .palavra-de-ia
+        grid-area: palavra-de-ia
+        background-image: url(../images/blog/grid-palavra-de-ia.jpg)
 
-	.quem-disse
-		grid-area: quem-disse
-		background-image: url(../images/blog/grid-quem-disse.jpg)
+    .tendencias-e-futurismo
+        grid-area: tendencias-e-futurismo
+        background-image: url(../images/blog/grid-tendencias-e-futurismo.jpg)
 
-	.cem-palavras
-		grid-area: cem-palavras
-		background-image: url(../images/blog/grid-cem-palavras.jpg)
+    .quem-disse
+        grid-area: quem-disse
+        background-image: url(../images/blog/grid-quem-disse.jpg)
 
-	.tirinhas
-		grid-area: tirinhas
-		background-image: url(../images/blog/grid-tirinhas.jpg)
+    .cem-palavras
+        grid-area: cem-palavras
+        background-image: url(../images/blog/grid-cem-palavras.jpg)
 
-	.zen-por-cento
-		grid-area: zen-por-cento
-		background-image: url(../images/blog/grid-zen-por-cento.jpg)
+    .tirinhas
+        grid-area: tirinhas
+        background-image: url(../images/blog/grid-tirinhas.jpg)
 
-	.inovacoes
-		grid-area: inovacoes
-		background-image: url(../images/blog/grid-inovacoes.jpg)
+    .zen-por-cento
+        grid-area: zen-por-cento
+        background-image: url(../images/blog/grid-zen-por-cento.jpg)
 
-	.glossario
-		grid-area: glossario
-		background-image: url(../images/blog/grid-glossario.jpg)
+    .inovacoes
+        grid-area: inovacoes
+        background-image: url(../images/blog/grid-inovacoes.jpg)
+
+    .glossario
+        grid-area: glossario
+        background-image: url(../images/blog/grid-glossario.jpg)

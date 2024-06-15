@@ -14,7 +14,9 @@
 	@include u.s
 		background-image: url('../images/bg-capa-mobile.jpg')
 		height: auto
-		overflow: auto
+		min-height: unset
+		@include u.dflex(flex-end, center, column)
+		overflow: unset
 
 	&__content-left
 		width: 50%
@@ -22,8 +24,12 @@
 		@include u.dflex(flex-end, flex-end, row)
 
 		@include u.s
+			width: 100%
+			height: auto
 			@include u.dflex(center, center, column)
 			order: 2
+			margin: 0
+			padding: 0
 
 		img
 			width: auto
@@ -35,7 +41,8 @@
 			@include u.s
 				width: 80%
 				height: auto
-				margin: 0
+				margin-right: 0
+				margin-top: 20px
 
 	&__content-right
 		width: 50%
@@ -44,21 +51,18 @@
 		padding-right: 10vw
 
 		@include u.s
+			width: 100%
 			padding-right: 0
 			order: 1
 
 	&__logo
-		width: 80%
+		width: 75%
 		height: auto
-		margin-bottom: 20px
+		margin: 20px auto
 
 		img
 			width: 100%
 			height: auto
-
-			@include u.s
-				width: 80%
-				height: auto
 
 	&__text
 		font-optical-sizing: auto
@@ -68,8 +72,8 @@
 		text-align: center
 
 		@include u.s
-			font-size: 5vw
-			margin-top: 20px
+			font-size: 1.5rem
+			padding: 0 20px
 
 	&__video
 		display: flex

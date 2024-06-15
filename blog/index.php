@@ -88,6 +88,7 @@ include '../components/head.php';
 		</div>
 	</div>
 	<?php include '../components/footer.php'; ?>
+	<script src="/assets/scripts/nav.js"></script>
 	<script src="/assets/scripts/scripts.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
 	<script>

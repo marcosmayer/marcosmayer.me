@@ -12,7 +12,7 @@
 	background-color: #F7D55D
 
 	@include u.s
-		padding: 40px 5%
+		padding: 40px 0 0 0
 		background-color: #F7D55D
 
 	&__menu
@@ -54,6 +54,10 @@
 		width: 30%
 		height: auto
 
+		@include u.s
+			width: 80%
+			margin-bottom: 30px
+
 	&__social
 		display: flex
 		justify-content: center
@@ -81,3 +85,4 @@
 
 		@include u.s
 			order: 4
+			font-size: 0.9rem

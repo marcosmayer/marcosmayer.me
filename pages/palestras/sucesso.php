@@ -18,6 +18,7 @@ include '../../components/head.php';
 		</div>
 	</div>
 	<?php include '../../components/footer.php'; ?>
+	<script src="/assets/scripts/nav.js"></script>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
 	<script>

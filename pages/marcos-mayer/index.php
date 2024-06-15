@@ -9,42 +9,59 @@ include '../../components/head.php';
 
 <body>
 	<?php include '../../components/nav.php'; ?>
-	<?php
-	$title = 'Olá, eu sou o Marcos';
-	$text = '<p class="p--destacado">Desde muito pequeno, eu tive a sorte de conviver com amigos que eram melhores do que eu.</p><p>Não pense que estou me colocando como vítima. São apenas fatos. Eles eram mais inteligentes, tinham uma condição de vida muito superior e estudavam, juntos, em um dos melhores colégios do Brasil.</p><p>Como um menino criado em um sítio, no interior de São Paulo, eu tive que encontrar alguma maneira de me relacionar com eles.</p><p>Sem saber disso, então, eu acabei desenvolvendo uma habilidade extra: a criatividade.</p>';
-	$class2 = 'l-ttl-txt-r-img__image--sobre';
-	include '../../modules/l-ttl-txt-r-img.php';
-	?>
-	<?php
-	$title = 'Despertar e aguçar a minha criatividade desde muito cedo fez toda a diferença.';
-	$text = '<p>Meu convívio com esses amigos — e alguns são meus amigos até hoje — acabou sendo muito bom. Eu sempre era desafiado a encontrar formas de me relacionar com eles. Sempre inventava algo diferente, criava algum tipo de atividade que pudesse servir como vitrine para o que eu sabia fazer, que era ser criativo.</p>
-			<p>A criatividade acabou sendo definitiva na minha carreira, na minha mentalidade e na minha prática.</p>';
-	$class2 = 'l-img-r-ttl-txt--despertar';
-	$class3 = 'l-img-r-ttl-txt__image--despertar';
-	$class4 = 'l-img-r-ttl-txt__text--despertar';
-	$class5 = 'l-img-r-ttl-txt__h2--despertar';
-	include '../../modules/l-img-r-ttl-txt.php';
-	?>
-	<?php
-	$title = 'Assim como você, eu enfrento desafios todos os dias.';
-	$text = '<p>Mas com a ajuda de um framework comprovadamente eficaz, eu transformo cada desafio em uma oportunidade de me tornar o meu próprio C.A.S.E.</p>';
-	$image = '../../assets/images/mm-standing.png';
-	include '../../modules/l-img-r-ttl-txt-2.php';
-	?>
-	<?php
-	$title = 'Tenho uma missão e um compromisso com você:';
-	$text = '<p>Quero te ajudar a transformar o teu potencial, que é virtualmente infinito, em potência, de modo que você se torne a pessoa que mais admira no mundo.</p>';
-	$highlight = 'A partir daí, o que pode acontecer só dependerá de você.';
-	$image = '../../assets/images/mm-capa-sobre.png';
-	$alt = 'Marcos Mayer';
-	include '../../modules/l-ttl-txt-hlg-r-img.php';
-	?>
-	<?php
-	$text = '<p>Hoje, sou sócio e cofundador da escola de negócios <span class="bold">Masters of Business</span>, que nasceu para mudar a forma como o conhecimento de negócios é compartilhado.</p><p>Como responsável por marketing e inovação, estou sempre buscando novas maneiras de chegar até os profissionais que precisam se um “empurrãozinho” para dar o próximo passo.</p><p>Assim como na minha atuação como palestrante e consultor, o privilário de atuar na área da educação — que poderia ser chamada de área da transformação — é um grande privilégio, pelo qual sou grato todo os dias.</p>';
-	$image = '../../assets/images/mm-mob.jpg';
-	$alt = 'Marcos Mayer';
-	include '../../modules/l-img-r-txt.php';
-	?>
+	<!-- // ! Olá -->
+	<div class="apresentacao">
+		<div class="apresentacao__text">
+			<h2>Olá, eu sou o Marcos</h2>
+			<p class="p--destacado">Desde muito pequeno, eu tive a sorte de conviver com amigos que eram melhores do que eu.</p>
+			<p>Não pense que estou me colocando como vítima. São apenas fatos. Eles eram mais inteligentes, tinham uma condição de vida muito superior e estudavam, juntos, em um dos melhores colégios do Brasil.</p>
+			<p>Como um menino criado em um sítio, no interior de São Paulo, eu tive que encontrar alguma maneira de me relacionar com eles.</p>
+			<p>Sem saber disso, então, eu acabei desenvolvendo uma habilidade extra: a criatividade.</p>
+		</div>
+		<div class="apresentacao__image apresentacao__image--sobre"></div>
+	</div>
+	<!-- // ! Despertar a criatividade -->
+	<div class="despertar despertar--despertar">
+		<div class="despertar__image despertar__image--despertar"></div>
+		<div class="despertar__text despertar__text--despertar">
+			<h2 class="despertar__h2--despertar">Despertar e aguçar a minha criatividade desde muito cedo fez toda a diferença.</h2>
+			<p>Meu convívio com esses amigos — e alguns são meus amigos até hoje — acabou sendo muito bom. Eu sempre era desafiado a encontrar formas de me relacionar com eles. Sempre inventava algo diferente, criava algum tipo de atividade que pudesse servir como vitrine para o que eu sabia fazer, que era ser criativo.</p>
+			<p>A criatividade acabou sendo definitiva na minha carreira, na minha mentalidade e na minha prática.</p>
+		</div>
+	</div>
+	<!-- // ! Enfrento desafios -->
+	<section class="desafios">
+		<div class="desafios__left">
+			<img src="../../assets/images/mm-standing.png" alt="Marcos Mayer">
+		</div>
+		<div class="desafios__right">
+			<h2>Assim como você, eu enfrento desafios todos os dias.</h2>
+			<p>Mas com a ajuda de um framework comprovadamente eficaz, eu transformo cada desafio em uma oportunidade de me tornar o meu próprio C.A.S.E.</p>
+		</div>
+	</section>
+	<!-- // ! Tenho uma missão -->
+	<section class="missao">
+		<div class="missao__left">
+			<h2>Tenho uma missão e um compromisso com você:</h2>
+			<p>Quero te ajudar a transformar o teu potencial, que é virtualmente infinito, em potência, de modo que você se torne a pessoa que mais admira no mundo.</p>
+			<div class="missao__destaque">A partir daí, o que pode acontecer só dependerá de você.</div>
+		</div>
+		<div class="missao__right">
+			<img src="../../assets/images/mm-capa-sobre.png" alt="Marcos Mayer">
+		</div>
+	</section>
+	<!-- // ! O que faço hoje -->
+	<section class="hoje">
+		<div class="hoje__left">
+			<img src="../../assets/images/mm-mob.jpg" alt="Marcos Mayer">
+		</div>
+		<div class="hoje__right">
+			<p>Hoje, sou sócio e cofundador da escola de negócios <span class="bold">Masters of Business</span>, que nasceu para mudar a forma como o conhecimento de negócios é compartilhado.</p>
+			<p>Como responsável por marketing e inovação, estou sempre buscando novas maneiras de chegar até os profissionais que precisam se um “empurrãozinho” para dar o próximo passo.</p>
+			<p>Assim como na minha atuação como palestrante e consultor, o privilário de atuar na área da educação — que poderia ser chamada de área da transformação — é um grande privilégio, pelo qual sou grato todo os dias.</p>
+		</div>
+	</section>
+	<!-- // ! Conduta -->
 	<section class="conduta">
 		<h1>Meu código de conduta</h1>
 		<h2>Um código é sagrado. Não é negociável. E orienta tudo o que eu faço.</h2>
@@ -91,31 +108,33 @@ include '../../components/head.php';
 			</div>
 		</div>
 	</section>
+	<!-- // ! Manifesto -->
 	<section class="manifesto">
 		<h1>Manifesto</h1>
 		<h2>As crenças que me fazem acreditar — sempre — em uma vida melhor para todos.</h2>
 		<div class="manifesto__content">
 			<div class="manifesto__text">
-				<h3>O potencial de cada pessoa é virtualmente ilimitado e qualquer pessoa pode transformar esse potencial em realidade. Essa transformação sempre começa com uma decisão.</h3>
+				<div class="manifesto__crenca">O potencial de cada pessoa é virtualmente ilimitado e qualquer pessoa pode transformar esse potencial em realidade. Essa transformação sempre começa com uma decisão.</div>
 			</div>
 			<div class="manifesto__divider"></div>
 			<div class="manifesto__text">
-				<h3>Confiar em você mesmo e acreditar que você é capaz é essencial e é o começo de toda transformação efetiva. A autoconfiança não é garantia de sucesso, mas a falta dela é garantia de fracasso.</h3>
+				<div class="manifesto__crenca">Confiar em você mesmo e acreditar que você é capaz é essencial e é o começo de toda transformação efetiva. A autoconfiança não é garantia de sucesso, mas a falta dela é garantia de fracasso.</div>
 			</div>
 			<div class="manifesto__divider"></div>
 			<div class="manifesto__text">
-				<h3>A criatividade é um estilo de vida, não uma ferramenta que usamos de vez em quando. Ela é para todos, sem exceção, e faz toda a diferença na forma como enxergamos e interagimos com o ambiente no qual estamos inseridos.</h3>
+				<div class="manifesto__crenca">A criatividade é um estilo de vida, não uma ferramenta que usamos de vez em quando. Ela é para todos, sem exceção, e faz toda a diferença na forma como enxergamos e interagimos com o ambiente no qual estamos inseridos.</div>
 			</div>
 			<div class="manifesto__divider"></div>
 			<div class="manifesto__text">
-				<h3>A vida pode ser muito melhor do que é, para cada indivíduo, comunidade ou para a sociedade como um todo. Mas para que isso se torne uma realidade, é preciso mudar a nossa cultura e a forma como lidamos com a vida, e isso sempre começa pela mudança pessoal.</h3>
+				<div class="manifesto__crenca">A vida pode ser muito melhor do que é, para cada indivíduo, comunidade ou para a sociedade como um todo. Mas para que isso se torne uma realidade, é preciso mudar a nossa cultura e a forma como lidamos com a vida, e isso sempre começa pela mudança pessoal.</div>
 			</div>
 			<div class="manifesto__divider"></div>
 			<div class="manifesto__text">
-				<h3>O único meio de promover uma mudança efetiva na nossa sociedade é por meio da educação. Orientar uma criança é muito mais fácil e muito mais eficaz na busca por uma vida melhor. As crianças nascem acreditando que são capazes e que podem transformar o mundo. Nós é que tiramos isso delas.</h3>
+				<div class="manifesto__crenca">O único meio de promover uma mudança efetiva na nossa sociedade é por meio da educação. Orientar uma criança é muito mais fácil e muito mais eficaz na busca por uma vida melhor. As crianças nascem acreditando que são capazes e que podem transformar o mundo. Nós é que tiramos isso delas.</div>
 			</div>
 		</div>
 	</section>
+	<!-- // ! Criar um CASE juntos -->
 	<section class="juntos">
 		<h1>Vamos criar um C.A.S.E. juntos?</h1>
 		<div class="juntos__content">
@@ -137,6 +156,7 @@ include '../../components/head.php';
 		</div>
 	</section>
 	<?php include '../../components/footer.php'; ?>
+	<script src="/assets/scripts/nav.js"></script>
 	<script src="/assets/scripts/scripts.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
 	<script>

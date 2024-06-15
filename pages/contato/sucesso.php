@@ -23,6 +23,7 @@ include '../../components/head.php';
 	<script>
 		AOS.init();
 	</script>
+	<script src="/assets/scripts/nav.js"></script>
 	<script src="/assets/scripts/scripts.js"></script>
 </body>
 

@@ -34,6 +34,7 @@ include '../../components/head.php';
 		});
 	</script>
 	<script src="/assets/scripts/formValidationContato.js"></script>
+	<script src="/assets/scripts/nav.js"></script>
 	<script src="/assets/scripts/scripts.js"></script>
 	<script src="/assets/scripts/masks.js"></script>
 </body>

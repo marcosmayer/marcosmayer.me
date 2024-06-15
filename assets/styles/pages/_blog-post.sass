@@ -1,7 +1,13 @@
+@use '../../styles/base' as b
+@use '../../styles/utils' as u
+
 .blog-post
 	width: 100%
 	height: auto
 	padding: 60px 0 100px 0
+
+	@include u.s
+		padding: 60px 20px 100px 20px
 
 	&__container
 		width: 100%
@@ -31,16 +37,31 @@
 		margin: 0 100px 40px 100px
 		text-align: left
 
+		@include u.s
+			text-align: center
+			font-size: 1.25rem
+
 	&__area
 		width: 900px
 		height: auto
 		display: flex
 		margin: 0 auto
 
+		@include u.s
+			width: 100%
+
 	&__image
 		width: 100%
 		height: auto
 		margin-bottom: 30px
+
+		img
+			width: 100%
+			height: auto
+
+		@include u.s
+			width: 100vw
+			margin-left: -20px
 
 	&__tirinha
 		width: 100%
@@ -62,6 +83,9 @@
 		height: auto
 		border-right: 1px solid #e6e6e6
 		padding: 30px 40px 0 0
+
+		@include u.s
+			width: 100%
 
 		p
 			font-size: 1.2rem
@@ -109,6 +133,9 @@
 		height: auto
 		min-height: 200px
 		background-color: #f9f9f9
+
+		@include u.s
+			display: none
 
 	&__words-counter
 		width: 50%
